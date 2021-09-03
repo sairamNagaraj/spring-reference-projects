@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "28801ade-857a-4cb2-82bf-233b1a29d162",
+		"name": "DocumentCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FileWriteToLocalSystem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileName\":\"FirstPdf\",\r\n    \"instructName\":\"Simple\",\r\n    \"outputType\":\"LocalFileOutput\",\r\n    \"input\":{\r\n        \"name\":\"Sairam\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/document/requestPdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"document",
+						"requestPdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Base64Output",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fileName\":\"FirstPdf\",\r\n    \"instructName\":\"Simple\",\r\n    \"outputType\":\"serviceResponse\",\r\n    \"input\":{\r\n        \"name\":\"Sairam\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/document/requestPdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"document",
+						"requestPdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
